@@ -1,5 +1,6 @@
 package com.question.controller;
 
+
 import com.question.entity.Question;
 import com.question.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +25,7 @@ public class QuestionController {
 
     }
 
-     @GetMapping()
+    @GetMapping()
     public List<Question> getAll() {
         return questionService.get();
     }
